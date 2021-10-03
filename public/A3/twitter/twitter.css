@@ -1,0 +1,257 @@
+body{
+    background-color: black;
+}
+.wd-thin-border {
+    border-width: 1px 1px 1px 1px ;
+}
+.wd-solid {
+    border-style: solid;
+}
+.wd-grey-border{
+    border-color:  grey;
+}
+.wd-margin{
+    margin-left: 16px;
+    overflow: auto;
+}
+
+.wd-white-color{
+    color: navajowhite;
+}
+
+.search {
+    top: 15px;
+    position: relative;
+}
+
+.search input {
+    background-color: darkgrey;
+    text-indent: 30px;
+    border-radius: 50px;
+    width: 1400px;
+    height: 40px;
+}
+.search .fa-search {
+    color: gray;
+    position: absolute;
+    top: 16px;
+    left: 9px;
+    font-size: 20px;
+}
+.wd-gear{
+    top: 10px;
+    position: absolute;
+    padding-left: 13px;
+    color: blue;
+    font-size: 28px;
+}
+
+.wd-div-nav a{
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size:15px;
+}
+
+a.active {
+    color: rgb(29,161,242);
+    border-bottom: 4px solid rgb(29,161,242);
+    font-size: 15px;
+    padding: 16px;
+}
+
+a.inactive{
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    padding: 16px;
+}
+.nav-list{
+    list-style: none;
+}
+.nav-li{
+    display: inline-block;
+}
+
+.wd-general-topic {
+    font-size: 13px;
+    color: rgb(110,118,125);
+
+}
+.wd-topic{
+    font-size: 13px;
+    color: white;
+}
+
+.wd-author{
+    color: white;
+    font-size: 23px;
+}
+
+.wd-img{
+    border-radius: 10px;
+    float: right;
+    padding-right: 16px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    height: 100px;
+    width: 100px;
+}
+
+.wd-logo{
+    border-radius: 100px;
+    float: left;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    top:13px;
+    padding-right: 3px;
+}
+.wd-prof-img{
+    border-radius: 48px;
+    position: relative;
+    float: left;
+    left: 16px;
+    top: 26px;
+    height:40px;
+    width:40px;
+}
+
+.wd-tweets{
+    font-size: 13px;
+    color: lightgray;
+}
+
+.fa-ellipsis-h {
+    color: gray;
+    float: right;
+    position: relative;
+    padding-right: 16px;
+}
+
+.wd-paragraphs-left{
+    display: inline-block;
+}
+.fa-check {
+    color: white;
+    padding-left: 5px;
+}
+
+.fa-comment{
+    padding: 12px;
+    padding-left: 30px;
+    color: gray;
+}
+
+.fa-retweet{
+    padding: 12px;
+    padding-left: 90px;
+    color: gray;
+}
+.fa-share{
+    padding: 12px;
+    padding-left: 90px;
+    color: gray;
+}
+
+.fa-heart{
+    padding: 12px;
+    padding-left: 90px;
+    color: red;
+}
+
+.wd-bookmarks-title{
+    left: 16px;
+    top: 12px;
+    color:white;
+    font-size: 25px;
+}
+
+.wd-bookmarks-handle{
+    color: gray;
+    font-size: 13px;
+    position: relative;
+    top:-18px;
+}
+
+.wd-book-author{
+    position: relative;
+    left:30px;
+    top:12px;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+}
+
+.wd-book-handle{
+    color: gray;
+    display: inline-block;
+}
+
+.wd-book-content{
+    position: relative;
+    left:30px;
+    top:12px;
+    color: white;
+    font-size: 15px;
+    width: 506px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+
+}
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
+.float-done{
+    clear: both;
+}
+.wd-img-bookmark{
+    object-fit: fill;
+    padding-left: 20px;
+    height: 400px;
+    width: 500px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom: 1px solid gray;
+
+}
+
+.wd-f-border{
+    border-radius: 40px;
+    border-bottom: 0;
+}
+
+.wd-f-title{
+    color: white;
+    top: 12px;
+    font-size: 15px;
+    padding: 12px;
+    width: 506px;
+}
+
+.wd-f-content{
+    color: gray;
+    top:-20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom: 1px solid gray;
+    width: 506px;
+}
+
+.wd-numbers{
+    color: gray;
+}
+
+.wd-numbers-red{
+    color: red;
+}
+
+.wd-inline{
+    display: inline-block;
+}
+
