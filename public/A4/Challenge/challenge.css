@@ -1,0 +1,116 @@
+body{
+    background-color: black;
+}
+
+.list-group{
+    background-color: black;
+    color: white;
+}
+.list-group-tabs .list-group-item{
+    background-color: black;
+    color: white;
+}
+
+.list-group .list-group-item{
+    background-color: black;
+    color: white;
+}
+
+.wd-rightList{
+    background-color: grey;
+    border: 0;
+}
+
+.list-group .list-group-item {
+    background-color: black;
+    color: white;
+}
+
+.wd-tweetButton{
+    width:100%;
+}
+
+.fa-cog{
+    color: white;
+}
+
+.fa-check{
+    color: black;
+}
+
+.fa-search{
+    color: darkgrey;
+}
+
+.wd-bold{
+    font-weight: bold;
+}
+
+.wd-normal{
+    font-weight: normal;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wd-bottomLeft{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.fa-stack{
+    font-size: 0.5em;
+}
+
+.search input {
+    background-color: grey;
+    text-indent: 30px;
+    border-radius: 50px;
+}
+
+.form-control ::placeholder{
+    color: white;
+    opacity: 1;
+}
+
+.active{
+    border-bottom: 4px solid rgb(29,161,242);
+    font-weight: bold;
+    color: white;
+}
+
+.nav-item .nav-link{
+    color: gray;
+}
+.nav-item .nav-link .active{
+    color: white;
+}
+
+.wd-active{
+   font-weight: bold;
+}
+
+.active .wd-active{
+    background-color: white;
+}
+
+.fg-color-blue{
+    color: #1847e1;
+}
+
+.fg-color-darkgray{
+    color: darkgray;
+}
+
+.wd-fontSmall{
+    font-size: small;
+}
+
+.btn-primary.override-bs {
+    background-color: white;
+    border-color: white;
+    color: black;
+
+}
