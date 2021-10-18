@@ -1,0 +1,93 @@
+.active{
+    border-bottom: 4px solid rgb(29,161,242);
+    font-weight: bold;
+    color: white;
+}
+
+.wd-tweetButton{
+    width:100%;
+}
+
+.fa-cog{
+    color: #2357e7;
+}
+
+.wd-bold{
+    font-weight: bold;
+}
+
+.wd-normal{
+    font-weight: normal;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wd-bottomLeft{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.fa-stack{
+    font-size: 0.5em;
+}
+
+.search input {
+    text-indent: 30px;
+    border-radius: 50px;
+
+}
+
+.wd-bottom-left1{
+    position: absolute;
+    bottom:8px;
+    left:16px;
+    color:white;
+    font-size:50px;
+    font-weight: bold;
+}
+
+.wd-rounded-corners{
+    border-radius: 50px;
+}
+
+.imageText{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.wd-bottom-left{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.fa-comment {
+    color: grey;
+}
+
+.fa-retweet {
+    color: grey;
+}
+
+.fa-heart {
+    color: grey;
+}
+
+.fa-share {
+    color: grey;
+}
+
+.count-color {
+    color: grey;
+}
+
+.hyperlink-no-border {
+    text-decoration: none;
+}
+
+.list-group .list-group-item {
+    border-color: grey;
+}
