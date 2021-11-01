@@ -9,7 +9,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
       {/*<NavigationSidebar active="explore"/>*/}
-  // </React.StrictMode>,
+ </React.StrictMode>,
   document.getElementById('root')
 );
 

@@ -13,7 +13,7 @@ const Build = () => {
         <>
             <div className="row mt-2">
                 <div className="col-2 col-lg-1 col-xl-2">
-                    <NavigationSidebar active="home"/>
+                    <NavigationSidebar active="explore"/>
                 </div>
                 <div className="col-10 col-lg-7 col-xl-6">
                     <ExploreComponent/>

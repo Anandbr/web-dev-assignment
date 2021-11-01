@@ -7,11 +7,11 @@ const ExploreComponent = () => {
         <>
         <div className="row">
             <div className="col-10" >
-                <i className = "fa fa-search fa-lg mt-2 pt-1 ms-2 ps-1" style={{"position": "absolute"}}></i>
-                <div className="search"><input className="formControl" placeholder="Search Twitter"/></div>
+                <i className = "fa fa-search fa-lg mt-2 pt-1 ms-2 ps-1" style={{"position": "absolute"}}/>
+                <div className="search"><input className="form-control" placeholder="Search Twitter"/></div>
             </div>
             <div className="col-2">
-                <i className="fas fa-cog fa-2x"></i>
+                <i className="fas fa-cog fa-2x"/>
             </div>
         </div>
         <ul className="nav mt-2 mb-2">
@@ -31,16 +31,16 @@ const ExploreComponent = () => {
                 <a className="nav-link" href="entertainment.html">Entertainment</a>
             </li>
         </ul>
-           <ul className = "list-group">
-                <li className="list-group-item" >
-
+           {/*<ul className = "list-group">*/}
+           {/*     <li className="list-group-item" >*/}
+           {/*     <div>*/}
                         <img src='/Starship1.png' style ={{"position": "relative", "max-width": "100%", "height": "auto"}}/>
-                        <div className = "wd-bottom-left1">
-                            <p >SpaceX's Starship</p>
+                        <div className = "wd-bottomLeft">
+                            SpaceX's Starship
                         </div>
-
-                </li>
-            </ul>
+                {/*</div>*/}
+                {/*</li>*/}
+            {/*</ul>*/}
 
             <PostSummaryList/>
 

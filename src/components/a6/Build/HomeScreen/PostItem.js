@@ -1,10 +1,13 @@
+import React from "react";
+
+
 const PostItem = (
     {
         posts = {
-            "userName": "Elon Musk","avatarIcon1": "../explore/ExploreScreen/PostSummaryList/musk.jpg", "handle1": "@elonmusk", "time": "23h", "caption": "Amazing show about @Inspiration4x mission!",
+            "userName": "Elon Musk","avatarIcon1": "../explore/ExploreScreen/PostSummaryList/musk.jpg", "handle1": "@elonmusk", "time": "23h", "textBfrCaption": "Amazing show about", "caption": "@Inspiration4x", "textAftrCaption": " mission!",
             "image": "../explore/ExploreScreen/PostSummaryList/inspiration4.jpg", "header": "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
             "description": "From training to launch to landing, this all-access docuseries rides along with Inspiration4 crew on the first all-civilian orbital space ...",
-            "tag": "<i class=\"fas fa-link\"></i> netflix.com", "comments": "4.2K", "retweet": "3.5K", "likes": "37.5K"
+            "tag": " netflix.com", "comments": "4.2K", "retweet": "3.5K", "likes": "37.5K"
         }
     }) => {
     return(
@@ -17,19 +20,19 @@ const PostItem = (
                         </div>
                         <div className = "col-9">
                             {posts.userName}
-                            <span className="fa-stack fa">
-                                <i className="fas fa-certificate fa-stack-2x"></i>
-                                <i className="fas fa-check fa-stack-1x"></i>
+                            <span className="fa-stack">
+                                <i className="fas fa-certificate fa-stack-2x"/>
+                                <i className="fas fa-check fa-stack-1x fa-inverse"/>
                             </span>
                             <span>
                                  {posts.handle1} &middot; {posts.time}
                             </span>
                             <div>
-                            {posts.caption}
+                            {posts.textBfrCaption} <a href= "#">{posts.caption}</a>{posts.textAftrCaption}
                             </div>    
                         </div>
                         <div className="col-1">
-                            <i className="fas fa-ellipsis-h"></i>
+                            <i className="fas fa-ellipsis-h"/>
                         </div>
                     </div>
                     <ul className="list-group" style={{"borderRadius": "40px"}}>
@@ -47,7 +50,7 @@ const PostItem = (
                             {posts.description}
                         </div>
                         <div>
-                        {posts.tag}
+                            {posts.tag}
                         </div>
                     </div>
                     </li>
