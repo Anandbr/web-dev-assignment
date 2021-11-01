@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import NavigationSidebar from "./components/a6/Build/NavigationSidebar/NavigationSidebar";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+      {/*<NavigationSidebar active="explore"/>*/}
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 
