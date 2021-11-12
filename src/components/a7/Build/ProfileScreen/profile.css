@@ -1,0 +1,19 @@
+.profile-back{
+    height: 225px;
+    background-image: url('https://lh3.googleusercontent.com/oNPzCDSP2VqCCwEvO_1i7X1MGiaBGr8gJuc3tw2dr9BdZqy3wlR-v_oTtU1NG9gkzLSyr-LRS5YtOnrBZGhE08ZN5CdcNZmtjDdheL8=h600');
+    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-back img{
+    height: 120px;
+    width: 120px;
+    margin-top: 165px;
+    display: block;
+    margin-right: auto;
+}
+
+.btn{
+    float: right;
+}
