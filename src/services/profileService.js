@@ -1,7 +1,9 @@
-const TWEET_API = 'http://localhost:4000/api/profile';
+
+
+const PROFILE_API = 'http://localhost:4000/api/profile';
 
 export const getCurrentProfile = (dispatch) =>
-    fetch(TWEET_API)
+    fetch(PROFILE_API)
         .then(response => response.json())
         .then(profile =>
             dispatch({
@@ -12,12 +14,20 @@ export const getCurrentProfile = (dispatch) =>
         );
 
 export const updatCurrentProfile = (dispatch, profile) =>
-    fetch(`${TWEET_API}`, {
-        method: 'PUT'
+    fetch(PROFILE_API, {
+        method: 'PUT',
+        body:  JSON.stringify(profile),
+        headers: {
+            'content-type': 'application/json'
+        }
     })
         .then(response => response.json())
-        .then(response =>
+        .then(profile => {
+            console.log("check" + profile);
             dispatch({
-                type: 'update-user-profile',
+                type: 'update-profile',
                 profile
-            }));
+            })
+
+        });
+

@@ -5,9 +5,11 @@ import TweetListItem from "./TweetListItem";
 import {fetchAllTweets} from "../../../../services/twitterService";
 
 const selectAllTweets = (state) => state.tweets
+// console.log(fetchAllTweets());
 
 const TweetList = () => {
     const tweets = useSelector(selectAllTweets)
+    // console.log(tweets);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -17,7 +19,7 @@ const TweetList = () => {
                 return response.json()
             })
             .then((tweets) => {
-                console.log(tweets);
+                // console.log(tweets);
 
                 dispatch({
                     type: 'set-tweet',

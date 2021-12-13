@@ -4,21 +4,22 @@ import {useNavigate} from "react-router-dom";
 import {Link} from "react-router-dom";
 import {updatCurrentProfile, getCurrentProfile} from "../../../../services/profileService";
 
-const profileDetail = (state) => state.profile;
+const profileDetail = (state) => state.profileA8;
 
 const EditProfileComponent = () => {
     let navigate = useNavigate();
-    const profile = useSelector(profileDetail)[0];
-    // let[newInput,setProfileData] = useState({});
-    const dispatch = useDispatch();
+    let profile = useSelector(profileDetail)[0];
+
 
     // const [firstName, setFirstName] = useState(profile["firstName"]);
     // const [lastName, setLastName] = useState(profile["lastName"]);
-    const [userName, setUserName] = useState(profile["userName"]);
-    const [bio, setBio] = useState(profile["bio"]);
-    const [location, setLocation] = useState(profile["location"]);
-    const [website, setWebsite] = useState(profile["website"]);
-    const [birthDate, setBirthdate] = useState(profile["dateOfBirth"]);
+    let [userName, setUserName] = useState(profile['userName']);
+
+    let [bio, setBio] = useState(profile['bio']);
+   let [location, setLocation] = useState(profile['location']);
+    let [website, setWebsite] = useState(profile['website']);
+    let [birthDate, setBirthdate] = useState(profile['dateOfBirth']);
+    const dispatch = useDispatch();
 
     // const saveProfile = () => {
     //     dispatch({type: 'save-profile', profile})
@@ -28,16 +29,21 @@ const EditProfileComponent = () => {
     const saveChanges = () => {
         // profile["firstName"] = firstName;
         // profile["lastName"] = lastName;
+        profile["_id"] = 1;
         profile["bio"] = bio;
         profile["location"] = location;
         profile["website"] = website;
         profile["dateOfBirth"] = birthDate;
         profile["userName"] = userName;
-        dispatch({type: 'save', profile});
-        console.log(profile);
-        updatCurrentProfile(dispatch, profile).then(r => {
+        dispatch({type: 'update-profile', profile});
+        console.log("saveChanges" + profile.userName);
+        updatCurrentProfile(dispatch,{
+            profile
+        } )
+            .then(r => {
             console.log("profile", profile);
         });
+        console.log("saveChangesAfter" + profile.userName);
         navigate("/a8/twitter/profile")
     }
     return(
@@ -76,6 +82,7 @@ const EditProfileComponent = () => {
                                 <input className="border-0 text-white mt-2" type="text" placeholder="Name" name="userName" defaultValue={profile.userName}
                                        onChange={e => setUserName(e.target.value)}
                                 />
+
                             </li>
                             <br/>
                             <li className="list-group-item border border-secondary">

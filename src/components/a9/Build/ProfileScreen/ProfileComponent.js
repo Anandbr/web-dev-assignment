@@ -1,44 +1,51 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {useSelector, useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
+import profileServiceA9 from "../../../../services/profileServiceA9";
 import {getCurrentProfile} from "../../../../services/profileService";
 import {prettyFormat} from "@testing-library/react";
+import twitterServiceA9 from "../../../../services/twitterServiceA9";
 
-const profileDetail = (state) => state.profileA8;
+// const profileDetail = (state) => state.profileA8;
 
 const ProfileComponent = () => {
-    const prof = useSelector(profileDetail);
-    // console.log(prof);
-    let profile;
-    if (prof[0] == null) {
-        profile =  prof;
-    }
-    else {
-        profile = prof[0];
-    }
-
-
-    console.log("ProfileComponent", profile);
-
-    const dispatch = useDispatch();
-
-    // useEffect(() => getCurrentProfile(dispatch()), []);
-    useEffect(() => {
-        console.log("Profile component loaded");
-        fetch('http://localhost:4000/api/profile')
-            .then((response) => {
-                return response.json()
-            })
-            .then((profile) => {
-                console.log(profile.userName +"before set")
-                dispatch({
-                    type: 'set-profile',
-                    profile
-
-                });
-            })
-
-    }, []);
+    const [profile, setProfile] = useState([]);
+    useEffect(() =>
+        profileServiceA9.getCurrentProfile()
+            .then(profile => setProfile(profile[0])));
+    // console.log("what?" + profile);
+    // const prof = useSelector(profileDetail);
+    // // console.log(prof);
+    // let profile;
+    // if (prof[0] == null) {
+    //     profile =  prof;
+    // }
+    // else {
+    //     profile = prof[0];
+    // }
+    //
+    //
+    // console.log("ProfileComponent", profile);
+    //
+    // const dispatch = useDispatch();
+    //
+    // // useEffect(() => getCurrentProfile(dispatch()), []);
+    // useEffect(() => {
+    //     console.log("Profile component loaded");
+    //     fetch('http://localhost:4000/api/profile')
+    //         .then((response) => {
+    //             return response.json()
+    //         })
+    //         .then((profile) => {
+    //             console.log(profile.userName +"before set")
+    //             dispatch({
+    //                 type: 'set-profile',
+    //                 profile
+    //
+    //             });
+    //         })
+    //
+    // }, []);
 
     return(
 
@@ -47,7 +54,7 @@ const ProfileComponent = () => {
                 <div className="row">
                     <div className="col-2">
 
-                        <Link to = "/a8/twitter/home"><i className="fas fa-arrow-left"></i></Link>
+                        <Link to = "/a9/twitter/home"><i className="fas fa-arrow-left"></i></Link>
                     </div>
                     <div className="col-8">
 
@@ -61,7 +68,7 @@ const ProfileComponent = () => {
                 <img src={profile.profilePicture} className="rounded-circle"/>
             </div>
             <div className="col-md-12 ">
-                <Link to="/a8/twitter/profile/editProfile">
+                <Link to="/a9/twitter/profile/editProfile">
                     <a className="btn border btn-block rounded-pill">Edit Profile</a>
                 </Link>
             </div>

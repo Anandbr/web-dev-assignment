@@ -10,7 +10,7 @@ const NavigationSidebar = (
     return (
         <>
             <div className="list-group">
-                <Link to="/a8/"
+                <Link to="/a9/"
                className="list-group-item" href="#">
                    <div className="row">
                        <div className="col-2">
@@ -18,7 +18,7 @@ const NavigationSidebar = (
                        </div>
                    </div>
                 </Link>
-                <Link to="/a8/twitter/home"
+                <Link to="/a9/twitter/home"
                className={`list-group-item ${active === 'home' ? 'active' : ''}`} href="/public/a5/build/HomeScreen/explore.html">
                    <div className="row">
                        <div className="col-2">
@@ -29,7 +29,7 @@ const NavigationSidebar = (
                        </div>
                    </div>
             </Link>
-                <Link to="/a8/twitter/explore"
+                <Link to="/a9/twitter/explore"
                className={`list-group-item ${active === 'explore' ? 'active' : ''}`} href="/public/a5/build/explorescreen/explore.html">
                    <div className="row">
                        <div className="col-2">
@@ -81,7 +81,7 @@ const NavigationSidebar = (
                        </div>
                    </div>
                </a>
-                <Link to="/a8/twitter/profile"
+                <Link to="/a9/twitter/profile"
                       className={`list-group-item ${active === 'profile' ? 'active' : ''}`} href="profile.html">
                    <div className="row">
                        <div className="col-2">

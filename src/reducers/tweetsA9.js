@@ -16,7 +16,6 @@ const tweets = (state = [], action) => {
 
         case 'create-tweet':
             const tweet = {
-                "_id": (new Date()).getTime(),
                 "topic": "Web Development",
                 "userName": "jQuery",
                 "verified": false,
