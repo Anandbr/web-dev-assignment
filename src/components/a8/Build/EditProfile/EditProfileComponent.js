@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom";
 import {Link} from "react-router-dom";
 import {updatCurrentProfile, getCurrentProfile} from "../../../../services/profileService";
 
-const profileDetail = (state) => state.profileA8;
+const profileDetail = (state) => state.profile;
 
 const EditProfileComponent = () => {
     let navigate = useNavigate();
@@ -46,6 +46,7 @@ const EditProfileComponent = () => {
         console.log("saveChangesAfter" + profile.userName);
         navigate("/a8/twitter/profile")
     }
+
     return(
 
         <div className="row">

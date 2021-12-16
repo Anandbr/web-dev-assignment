@@ -7,17 +7,17 @@ export const getCurrentProfile = () =>
         .then(response => response.json())
 
 
-export const updatCurrentProfile = (profile) =>
-    fetch(URL, {
-        method: 'PUT',
-        body:  JSON.stringify(profile),
-        headers: {
-            'content-type': 'application/json'
-        }
-    })
-        .then(response => response.json())
+// export const updatCurrentProfile = (profile) =>
+//     fetch(URL, {
+//         method: 'PUT',
+//         body:  JSON.stringify(profile),
+//         headers: {
+//             'content-type': 'application/json'
+//         }
+//     })
+//         .then(response => response.json())
 
 export default {
-    getCurrentProfile, updatCurrentProfile
+    getCurrentProfile, //updatCurrentProfile
 };
 

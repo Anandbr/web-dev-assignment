@@ -20,10 +20,13 @@ export const deleteTweet = (id) =>
         method: 'DELETE',
     });
 
-export const likeTweet = (tweet) =>
-    fetch(`${URL}/${tweet._id}/like`, {
-        method: 'PUT'
-    }).then(response => response.json());
+export const likeTweet = (tweet) =>{
+    console.log("twee1" +tweet)
+
+    fetch(`${URL}/${tweet._id}`, {
+        method: 'PUT',
+        body: JSON.stringify(tweet)
+    }).then(response => response.json())};
 
 export default {
     fetchAllTweets, postNewTweet, deleteTweet, likeTweet

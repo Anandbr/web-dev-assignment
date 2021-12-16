@@ -4,11 +4,11 @@ import {Link} from "react-router-dom";
 import {getCurrentProfile} from "../../../../services/profileService";
 import {prettyFormat} from "@testing-library/react";
 
-const profileDetail = (state) => state.profileA8;
+const profileDetail = (state) => state.profile;
 
 const ProfileComponent = () => {
     const prof = useSelector(profileDetail);
-    // console.log(prof);
+    console.log(prof);
     let profile;
     if (prof[0] == null) {
         profile =  prof;
